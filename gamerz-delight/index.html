@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Sample for the owner. Kept out of Google until the owner approves and it moves to the shop's own domain. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Gamerz Delight | PS5, Xbox, Games & Phones, Accra Plaza, Nairobi</title>
+<meta name="description" content="PS5, Xbox, games, phones and accessories at Accra Plaza, Shop 23, Kenneth Matiba Rd, Nairobi. Order on WhatsApp, pay by M-PESA, same-day delivery in Nairobi.">
+<meta property="og:title" content="Gamerz Delight, Accra Plaza, Nairobi">
+<meta property="og:description" content="Consoles, games, phones and accessories. Order on WhatsApp, pay by M-PESA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Gamerz Delight",
+  "description": "Consoles, games, phones and accessories in Nairobi CBD.",
+  "telephone": "+254792027503",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Accra Plaza, Ground Floor, Shop 23, Kenneth Matiba Road",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "openingHours": "Mo-Sa 09:00-19:00",
+  "paymentAccepted": "M-PESA, Cash"
+}
+</script>
+<script>
+  // Google Analytics 4: set the shop's own measurement ID (G-XXXXXXX) to switch it on.
+  // Until then, events are only written to the browser console so the sample can be checked.
+  const GA_ID = "";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  if (GA_ID) {
+    const s = document.createElement("script");
+    s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+    gtag("js", new Date()); gtag("config", GA_ID);
+  }
+  function track(name, params){ if (GA_ID) gtag("event", name, params); else console.log("[GA4 event]", name, params); }
+</script>
+<style>
+  :root{--bg:#0b0d12;--card:#141821;--card2:#1b2030;--line:#252b3a;--text:#eef1f6;--muted:#97a0b0;--accent:#7c5cff;--accent2:#22d3ee;--wa:#1fa855;--warn:#ffd54a;--bad:#ef4444;--r:14px;--ease:cubic-bezier(.2,.8,.2,1)}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.logo{font-family:"Space Grotesk",Inter,system-ui,sans-serif}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--accent2);outline-offset:2px;border-radius:6px}
+  button{font:inherit}
+  .sample{background:var(--warn);color:#1a1400;font-size:12.5px;text-align:center;padding:6px 12px;font-weight:600}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  /* top bar */
+  .top{position:sticky;top:0;z-index:20;background:rgba(11,13,18,.85);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+  .logo{font-weight:700;letter-spacing:.5px;font-size:19px;text-decoration:none;white-space:nowrap}
+  .logo span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .links{display:flex;gap:2px;margin-left:auto}
+  .links a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:8px 11px;border-radius:9px;transition:background .15s,color .15s}
+  .links a.on,.links a:hover{color:var(--text);background:var(--card)}
+  .cartbtn{position:relative;background:var(--accent);border:0;color:#fff;border-radius:11px;padding:9px 13px;font-weight:700;font-size:14px;cursor:pointer;transition:transform .15s var(--ease)}
+  .cartbtn:active{transform:scale(.96)}
+  .cartbtn b{display:inline-block;min-width:20px;margin-left:6px;background:#fff;color:var(--accent);border-radius:999px;font-size:12px;padding:0 6px}
+  .cartbtn.bump{animation:bump .35s var(--ease)}
+  @keyframes bump{40%{transform:scale(1.12)}}
+  @media (max-width:720px){.links{display:none}.mnav{display:flex!important}.cartbtn{margin-left:auto}}
+  .mnav{display:none;gap:6px;overflow-x:auto;padding:8px 16px;border-bottom:1px solid var(--line);scrollbar-width:none}
+  .mnav a{flex:none;text-decoration:none;font-size:14px;color:var(--muted);padding:6px 12px;border:1px solid var(--line);border-radius:999px}
+  .mnav a.on{color:#fff;background:var(--accent);border-color:var(--accent)}
+  /* pages */
+  .page{display:none}
+  .page.on{display:block;animation:in .28s var(--ease)}
+  @keyframes in{from{opacity:0;transform:translateY(6px)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  /* hero */
+  .hero{padding:40px 0 22px;background:radial-gradient(640px 280px at 88% 0%,rgba(124,92,255,.30),transparent),radial-gradient(520px 260px at 0% 100%,rgba(34,211,238,.14),transparent)}
+  .hero h1{font-size:clamp(30px,6.4vw,52px);line-height:1.05;margin:0 0 12px;letter-spacing:-.5px}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);max-width:560px;margin:0 0 20px}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border-radius:12px;padding:12px 18px;font-weight:700;font-size:15px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--text);transition:transform .15s var(--ease),filter .15s}
+  .btn:hover{filter:brightness(1.1)}.btn:active{transform:scale(.97)}
+  .btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.w{background:var(--wa);border-color:var(--wa);color:#fff}
+  .btn.d{background:transparent;border-color:#5b1d1d;color:#fca5a5}
+  .btn.s{padding:8px 12px;font-size:13px;border-radius:10px}
+  .trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:24px 0 6px}
+  .trust div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px;color:var(--muted)}
+  .trust b{display:block;font-size:15px;color:var(--text)}
+  h2{font-size:24px;margin:30px 0 12px;letter-spacing:-.3px}
+  /* shop */
+  .tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+  input,select,textarea{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:15px;width:100%}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  .tools input{flex:1;min-width:180px;width:auto}.tools select{width:auto}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:14px;scrollbar-width:none}
+  .chips button{flex:none;background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer}
+  .chips button.on{background:var(--accent);border-color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:12px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px;display:flex;flex-direction:column;transition:transform .2s var(--ease),border-color .2s}
+  @media (hover:hover){.item:hover{transform:translateY(-3px);border-color:#3a4256}}
+  .pic{aspect-ratio:4/3;border-radius:10px;display:grid;place-items:center;margin-bottom:10px;position:relative;overflow:hidden;cursor:pointer}
+  .pic svg{width:56%;height:auto}
+  .pic img{width:100%;height:100%;object-fit:cover}
+  .badge{position:absolute;top:8px;left:8px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:rgba(0,0,0,.55)}
+  .badge.out{background:#5b1d1d}
+  .name{font-weight:650;font-size:15px;line-height:1.3;cursor:pointer}
+  .note{color:var(--muted);font-size:13px;margin:3px 0 8px;flex:1}
+  .price{font-size:16px;font-weight:800;margin-bottom:8px}
+  .price small{font-weight:500;color:var(--muted);font-size:11px;margin-left:4px}
+  .row{display:flex;gap:6px}
+  .row button,.row a{flex:1;text-align:center;border-radius:10px;padding:9px 6px;font-weight:700;font-size:13px;cursor:pointer;text-decoration:none;border:0;transition:transform .15s var(--ease)}
+  .row button:active,.row a:active{transform:scale(.96)}
+  .add{background:var(--card2);color:var(--text);border:1px solid var(--line)!important}
+  .add.in{background:var(--accent);color:#fff}
+  .ask{background:var(--wa);color:#fff}
+  .empty{color:var(--muted);padding:30px 0;text-align:center}
+  /* sections */
+  .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+  .box h3{margin:0 0 6px;font-size:17px}
+  .box p{margin:0;color:var(--muted);font-size:14px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:8px}
+  summary{cursor:pointer;font-weight:650}
+  details p{color:var(--muted);margin:8px 0 0;font-size:14px}
+  footer{margin-top:40px;padding:22px 0 110px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  /* drawers and dialogs */
+  .shade{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+  .drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--bg);border-left:1px solid var(--line);z-index:50;transform:translateX(100%);transition:transform .25s var(--ease);display:flex;flex-direction:column}
+  .open-cart .shade,.open-item .shade{opacity:1;pointer-events:auto}
+  .open-cart #drawer{transform:none}
+  .sheet{position:fixed;left:0;right:0;bottom:0;max-width:560px;margin:0 auto;max-height:88vh;overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:20px 20px 0 0;z-index:50;transform:translateY(105%);transition:transform .28s var(--ease);padding:16px 16px 24px}
+  .open-item #sheet{transform:none}
+  .sheet .pic{aspect-ratio:16/10;cursor:default}
+  .dh{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+  .x{background:none;border:0;color:var(--muted);font-size:24px;cursor:pointer;line-height:1}
+  .db{flex:1;overflow:auto;padding:12px 16px}
+  .line{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .line .n{flex:1}
+  .qty{display:flex;align-items:center;gap:6px}
+  .qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text);cursor:pointer}
+  .df{padding:14px 16px;border-top:1px solid var(--line)}
+  label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+  .total{display:flex;justify-content:space-between;font-weight:800;font-size:17px;margin:4px 0 4px}
+  .float{position:fixed;left:16px;right:16px;bottom:max(14px,env(safe-area-inset-bottom));max-width:1048px;margin:0 auto;z-index:30;display:flex;gap:8px}
+  .float a,.float button{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:14px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.5);border:0;font-size:15px;cursor:pointer}
+  .float a{background:var(--wa);color:#fff}
+  .float button{background:var(--accent);color:#fff;display:none}
+  .float.has button{display:block}
+  @media (min-width:900px){.float{left:auto;right:24px;max-width:none}.float a,.float button{flex:none;padding:12px 22px}}
+  .admin-on .float{display:none}
+  .toast{position:fixed;left:50%;top:72px;transform:translate(-50%,-20px);background:#fff;color:#111;font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:all .25s var(--ease);z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+  /* owner area */
+  .login{max-width:420px;margin:24px auto}
+  .demo-note{background:rgba(255,213,74,.08);border:1px dashed rgba(255,213,74,.45);color:#f5e6a8;border-radius:12px;padding:10px 12px;font-size:13px;margin:12px 0}
+  .tabs{display:flex;gap:6px;overflow-x:auto;margin:6px 0 14px;scrollbar-width:none}
+  .tabs button{flex:none;background:var(--card);color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;font-weight:600}
+  .tabs button.on{color:#fff;background:var(--accent);border-color:var(--accent)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .kpi b{display:block;font-size:22px;font-family:"Space Grotesk",Inter,sans-serif}
+  .kpi span{color:var(--muted);font-size:13px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  td,th{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+  th{color:var(--muted);font-weight:600;font-size:13px}
+  .tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+  .bar{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+  .thumb{width:44px;height:34px;border-radius:6px;overflow:hidden;display:grid;place-items:center}
+  .thumb svg{width:60%}.thumb img{width:100%;height:100%;object-fit:cover}
+  .pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--card2);border:1px solid var(--line)}
+  .pill.g{color:#86efac;border-color:#14532d}.pill.r{color:#fca5a5;border-color:#5b1d1d}.pill.y{color:#fde68a;border-color:#5b4a12}
+  .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+  .formgrid .full{grid-column:1/-1}
+  .who{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap}
+  .err{color:#fca5a5;font-size:13px;min-height:18px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="sample">SAMPLE built for Gamerz Delight by Emmanuel Muteti · items and prices are examples, not today's stock</div>
+
+<div class="top"><div class="wrap">
+  <a class="logo" href="#/">GAMERZ<span>DELIGHT</span></a>
+  <nav class="links" id="links">
+    <a href="#/">Home</a><a href="#/shop">Shop</a><a href="#/trade-in">Trade-in</a><a href="#/visit">Visit us</a><a href="#/owner">Owner</a>
+  </nav>
+  <button class="cartbtn" id="cartbtn" aria-label="Open order">Order<b id="count">0</b></button>
+</div></div>
+<nav class="mnav" id="mnav">
+  <a href="#/">Home</a><a href="#/shop">Shop</a><a href="#/trade-in">Trade-in</a><a href="#/visit">Visit us</a><a href="#/owner">Owner</a>
+</nav>
+
+<!-- HOME -->
+<section class="page" id="p-home">
+  <div class="hero"><div class="wrap">
+    <h1>PS5, Xbox, games and phones.<br><em>In the CBD, or delivered today.</em></h1>
+    <p>Pick what you want, send the list on WhatsApp, and pay by M-PESA when it reaches you.</p>
+    <div class="cta"><a class="btn p" href="#/shop">See what's in stock</a><a class="btn w" id="heroWa" href="#">Ask on WhatsApp</a></div>
+    <div class="trust">
+      <div><b>Same-day delivery</b>Within Nairobi</div>
+      <div><b>M-PESA</b>Pay on delivery or collection</div>
+      <div><b>Tested before you pay</b>Every console and phone</div>
+      <div><b>Trade-in</b>Swap your old console</div>
+    </div>
+  </div></div>
+  <div class="wrap">
+    <h2>Popular this week</h2>
+    <div class="grid" id="popular"></div>
+    <h2>Questions people ask</h2>
+    <details><summary>Are your consoles new or used?</summary><p>Both. Each item says "New" or "Refurbished", and every refurbished one comes with a shop warranty.</p></details>
+    <details><summary>How does delivery work?</summary><p>Send your order on WhatsApp before 4 pm and it arrives the same day within Nairobi. You pay by M-PESA when you have it in your hands.</p></details>
+    <details><summary>Can I trade in my old PS4?</summary><p>Yes. Send a photo on the Trade-in page and we reply with a price.</p></details>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="page" id="p-shop"><div class="wrap">
+  <h2>Shop</h2>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search: PS5, FC 26, iPhone…" aria-label="Search">
+    <select id="sort" aria-label="Sort"><option value="pop">Most popular</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<!-- TRADE-IN -->
+<section class="page" id="p-trade"><div class="wrap">
+  <h2>Trade in your old console or phone</h2>
+  <div class="two">
+    <div class="box"><h3>1. Send a photo</h3><p>Tell us the model and its condition on WhatsApp.</p></div>
+    <div class="box"><h3>2. Get a price</h3><p>We reply with what we can give for it, usually the same day.</p></div>
+    <div class="box"><h3>3. Swap at the shop</h3><p>Bring it in and take the new one home, paying only the difference.</p></div>
+  </div>
+  <p style="margin-top:16px"><a class="btn w" id="tradeWa" href="#">Start a trade-in on WhatsApp</a></p>
+</div></section>
+
+<!-- VISIT -->
+<section class="page" id="p-visit"><div class="wrap">
+  <h2>Visit us</h2>
+  <div class="two" id="shops"></div>
+</div></section>
+
+<!-- OWNER -->
+<section class="page" id="p-owner"><div class="wrap" id="owner"></div></section>
+
+<div class="wrap"><footer>
+  Gamerz Delight · Accra Plaza, Shop 23, Kenneth Matiba Rd, Nairobi · 0792 027 503<br>
+  Sample site prepared by Emmanuel Muteti for the owner's review. Not the shop's official site.
+</footer></div>
+
+<div class="float" id="float"><a id="floatWa" href="#">WhatsApp us</a><button id="floatCart">Send my order</button></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Your order">
+  <div class="dh"><b>Your order</b><button class="x" data-close aria-label="Close">×</button></div>
+  <div class="db" id="lines"></div>
+  <div class="df">
+    <div class="total"><span>Total</span><span id="total">KES 0</span></div>
+    <label for="nm">Your name</label><input id="nm" autocomplete="name" maxlength="60">
+    <label for="how">Delivery or collection</label>
+    <select id="how"></select>
+    <label for="area">Area (for delivery)</label><input id="area" placeholder="e.g. Kilimani" maxlength="60">
+    <p style="margin:14px 0 0"><a class="btn w" style="display:flex" id="send" href="#">Send order on WhatsApp</a></p>
+    <p style="font-size:12px;color:var(--muted);margin:8px 0 0">You pay by M-PESA when the order reaches you. Nothing is charged here.</p>
+  </div>
+</aside>
+<div class="sheet" id="sheet" role="dialog" aria-label="Item"></div>
+
+<script>
+  const WA = "254792027503"; // shop line from the public Google Maps listing
+  const wa = t => "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+  const kes = n => "KES " + Number(n||0).toLocaleString("en-KE");
+  // Everything typed by staff or buyers is escaped before it is put on the page.
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const $ = id => document.getElementById(id);
+  const store = { get(k,d){ try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch(e){ return d; } },
+                  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){ toast("This phone's storage is full; use a smaller photo"); } } };
+  function toast(t){ const el = $("toast"); el.textContent = t; el.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => el.classList.remove("on"), 1800); }
+
+  // Shops. The second one is from a referral and is to be confirmed with the owner.
+  const SHOPS = [
+    {id:"s1", name:"Accra Plaza, Shop 23", addr:"Ground Floor, Kenneth Matiba Road, Nairobi CBD", hours:"Mon–Sat, 9 am – 7 pm", map:"https://www.google.com/maps/search/?api=1&query=Gamerz+Delight+Accra+Plaza+Nairobi"},
+    {id:"s2", name:"Second shop", addr:"Address to confirm with the owner", hours:"Hours to confirm", map:""}
+  ];
+
+  // Example items and prices: the owner's own list replaces these.
+  const DEFAULTS = [
+    {id:"ps5",  c:"Consoles", n:"PlayStation 5 Slim", d:"Disc edition, 1 TB, one controller", p:72000, t:"New", pop:10, stock:{s1:4,s2:2}},
+    {id:"ps4",  c:"Consoles", n:"PlayStation 4 Slim", d:"500 GB, 3-month shop warranty", p:32000, t:"Refurbished", pop:8, stock:{s1:3,s2:1}},
+    {id:"xss",  c:"Consoles", n:"Xbox Series S", d:"512 GB, digital", p:48000, t:"New", pop:6, stock:{s1:2,s2:0}},
+    {id:"sw",   c:"Consoles", n:"Nintendo Switch OLED", d:"White, 64 GB", p:52000, t:"New", pop:4, stock:{s1:1,s2:1}},
+    {id:"fc26", c:"Games", n:"EA Sports FC 26 (PS5)", d:"Sealed", p:9500, t:"New", pop:10, stock:{s1:12,s2:6}},
+    {id:"gow",  c:"Games", n:"God of War Ragnarök (PS5)", d:"Sealed", p:6500, t:"New", pop:7, stock:{s1:5,s2:2}},
+    {id:"gta",  c:"Games", n:"GTA V (PS4/PS5)", d:"Disc", p:4000, t:"Used", pop:7, stock:{s1:6,s2:3}},
+    {id:"cod",  c:"Games", n:"Call of Duty (PS5)", d:"Latest edition, sealed", p:9000, t:"New", pop:6, stock:{s1:4,s2:0}},
+    {id:"a15",  c:"Phones", n:"Samsung Galaxy A15", d:"128 GB, 1-year warranty", p:19500, t:"New", pop:8, stock:{s1:5,s2:3}},
+    {id:"ip13", c:"Phones", n:"iPhone 13, ex-UK", d:"128 GB, battery health shown before you pay", p:58000, t:"Refurbished", pop:9, stock:{s1:2,s2:1}},
+    {id:"rn13", c:"Phones", n:"Redmi Note 13", d:"256 GB", p:23000, t:"New", pop:5, stock:{s1:3,s2:2}},
+    {id:"ds",   c:"Accessories", n:"DualSense controller", d:"PS5, several colours", p:9500, t:"New", pop:9, stock:{s1:8,s2:4}},
+    {id:"hs",   c:"Accessories", n:"Gaming headset", d:"Works with PS5, PS4 and PC", p:4500, t:"New", pop:5, stock:{s1:6,s2:2}},
+    {id:"chg",  c:"Accessories", n:"Fast charger + cable", d:"Type-C or Lightning", p:1500, t:"New", pop:6, stock:{s1:20,s2:10}},
+    {id:"bud",  c:"Accessories", n:"Wireless earbuds", d:"Several brands", p:2500, t:"New", pop:4, stock:{s1:0,s2:0}}
+  ];
+  const CATS = ["Consoles","Games","Phones","Accessories"];
+
+  let items  = store.get("gd_products", DEFAULTS);
+  let cart   = store.get("gd_cart", {});
+  let stats  = store.get("gd_stats", {});
+  let orders = store.get("gd_orders", []);
+  const saveItems = () => store.set("gd_products", items);
+  const byId = id => items.find(i => i.id === id);
+  const inStock = i => Object.values(i.stock||{}).reduce((s,n)=>s+Number(n||0),0);
+  const bump = (id, kind) => { stats[id] = stats[id] || {add:0, ask:0}; stats[id][kind]++; store.set("gd_stats", stats); };
+
+  // Drawn pictures in place of product photos until the shop's own photos arrive.
+  const art = {
+    Consoles:["#3b2a8f","#7c5cff",'<rect x="20" y="30" width="60" height="40" rx="8" fill="#fff" opacity=".92"/><circle cx="36" cy="50" r="5" fill="#7c5cff"/><circle cx="64" cy="46" r="3" fill="#22d3ee"/><circle cx="70" cy="54" r="3" fill="#22d3ee"/>'],
+    Games:["#0e5560","#22d3ee",'<rect x="28" y="18" width="44" height="64" rx="4" fill="#fff" opacity=".92"/><rect x="34" y="26" width="32" height="30" rx="2" fill="#22d3ee"/><rect x="34" y="62" width="22" height="4" rx="2" fill="#0e5560"/>'],
+    Phones:["#4a3410","#f5a524",'<rect x="34" y="12" width="32" height="76" rx="6" fill="#fff" opacity=".92"/><rect x="38" y="20" width="24" height="56" rx="2" fill="#f5a524"/><circle cx="50" cy="82" r="2.5" fill="#4a3410"/>'],
+    Accessories:["#14532d","#1fa855",'<path d="M26 56a24 24 0 0 1 48 0" stroke="#fff" stroke-width="6" fill="none" opacity=".92"/><rect x="20" y="52" width="14" height="22" rx="5" fill="#fff"/><rect x="66" y="52" width="14" height="22" rx="5" fill="#fff"/>']
+  };
+  const visual = (i, cls) => { const [a,b,g] = art[i.c] || art.Accessories;
+    return i.img ? `<div class="${cls}"><img src="${i.img}" alt="${esc(i.n)}" loading="lazy">`
+                 : `<div class="${cls}" style="background:linear-gradient(135deg,${a},${b})"><svg viewBox="0 0 100 100" aria-hidden="true">${g}</svg>`; };
+  const pic = i => visual(i,"pic") + `<span class="badge ${inStock(i)?"":"out"}">${inStock(i) ? esc(i.t) : "Sold out"}</span></div>`;
+
+  function card(i){
+    const out = !inStock(i), inCart = cart[i.id];
+    return `<div class="item"><div data-view="${esc(i.id)}">${pic(i)}</div>
+      <div class="name" data-view="${esc(i.id)}">${esc(i.n)}</div><div class="note">${esc(i.d)}</div>
+      <div class="price">${kes(i.p)}<small>sample price</small></div>
+      <div class="row">
+        ${out ? `<a class="ask" data-ask="${esc(i.id)}" href="${wa("Hi Gamerz Delight, when will the " + i.n + " be back in stock?")}">Notify me</a>`
+              : `<button class="add ${inCart?"in":""}" data-add="${esc(i.id)}">${inCart?"Added ✓":"Add"}</button>
+                 <a class="ask" data-ask="${esc(i.id)}" href="${wa("Hi Gamerz Delight, is the " + i.n + " available today?")}">Ask</a>`}
+      </div></div>`;
+  }
+
+  let cat = "All";
+  function drawShop(){
+    $("chips").innerHTML = ["All", ...CATS].map(c => `<button class="${c===cat?"on":""}" data-c="${c}">${c}</button>`).join("");
+    const q = $("q").value.trim().toLowerCase(), s = $("sort").value;
+    let list = items.filter(i => (cat==="All" || i.c===cat) && (!q || (i.n+" "+i.d+" "+i.c).toLowerCase().includes(q)));
+    list.sort((a,b) => s==="lo" ? a.p-b.p : s==="hi" ? b.p-a.p : (!inStock(a))-(!inStock(b)) || b.pop-a.pop);
+    $("grid").innerHTML = list.length ? list.map(card).join("") : `<div class="empty">Nothing found. <a href="${wa("Hi Gamerz Delight, do you have " + q + "?")}">Ask us on WhatsApp</a>; we may have it in the back.</div>`;
+  }
+  const drawPopular = () => $("popular").innerHTML = items.filter(inStock).sort((a,b)=>b.pop-a.pop).slice(0,4).map(card).join("");
+
+  function drawVisit(){
+    $("shops").innerHTML = SHOPS.map(s => `<div class="box"><h3>${esc(s.name)}</h3><p>${esc(s.addr)}<br>${esc(s.hours)}</p>
+      ${s.map ? `<p style="margin-top:10px"><a class="btn s" target="_blank" rel="noopener" href="${s.map}">Open in Google Maps</a></p>` : ""}</div>`).join("")
+      + `<div class="box"><h3>Call or WhatsApp</h3><p><a href="tel:+254792027503">0792 027 503</a></p></div>`;
+    $("how").innerHTML = `<option>Deliver to me in Nairobi</option>` + SHOPS.map(s => `<option>Collect at ${esc(s.name)}</option>`).join("");
+  }
+
+  // Item detail sheet
+  function openItem(id){
+    const i = byId(id); if (!i) return;
+    const where = SHOPS.map(s => `<span class="pill ${(i.stock||{})[s.id] ? "g" : "r"}">${esc(s.name)}: ${(i.stock||{})[s.id] ? "in stock" : "none"}</span>`).join(" ");
+    $("sheet").innerHTML = `<div style="display:flex;justify-content:flex-end"><button class="x" data-close aria-label="Close">×</button></div>
+      ${pic(i)}<h2 style="margin:6px 0 4px">${esc(i.n)}</h2><p style="color:var(--muted);margin:0 0 10px">${esc(i.d)}</p>
+      <div class="price" style="font-size:22px">${kes(i.p)}<small>sample price</small></div>
+      <p style="display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px">${where}</p>
+      <div class="row">${inStock(i) ? `<button class="add" data-add="${esc(i.id)}">Add to order</button>` : ""}
+        <a class="ask" data-ask="${esc(i.id)}" href="${wa("Hi Gamerz Delight, is the " + i.n + " available today?")}">Ask on WhatsApp</a></div>`;
+    document.body.classList.add("open-item");
+    track("view_item", {item_name: i.n, value: i.p, currency: "KES"});
+  }
+
+  function drawCart(){
+    cart = Object.fromEntries(Object.entries(cart).filter(([id]) => byId(id)));
+    const ids = Object.keys(cart);
+    const n = ids.reduce((s,id) => s + cart[id], 0);
+    $("count").textContent = n;
+    $("float").classList.toggle("has", n > 0);
+    $("floatCart").textContent = "Send my order (" + n + ")";
+    $("total").textContent = kes(cartTotal());
+    $("lines").innerHTML = ids.length ? ids.map(id => { const i = byId(id); return `
+      <div class="line"><div class="n">${esc(i.n)}<br><span style="color:var(--muted)">${kes(i.p)}</span></div>
+      <div class="qty"><button data-dec="${esc(id)}" aria-label="One less">−</button><b>${cart[id]}</b><button data-inc="${esc(id)}" aria-label="One more">+</button></div></div>`; }).join("")
+      : `<div class="empty">Nothing added yet. Open the Shop and tap "Add".</div>`;
+  }
+  const cartTotal = () => Object.keys(cart).reduce((s,id) => s + cart[id] * byId(id).p, 0);
+  function orderText(){
+    const lines = Object.keys(cart).map(id => `- ${cart[id]} x ${byId(id).n} (${kes(byId(id).p)})`).join("\n");
+    const nm = $("nm").value.trim(), how = $("how").value, area = $("area").value.trim();
+    return `Hi Gamerz Delight, I'd like to order:\n${lines}\nTotal: ${kes(cartTotal())}\n${how}${area ? ", " + area : ""}\n${nm ? "Name: " + nm : ""}`;
+  }
+  function refresh(){ store.set("gd_cart", cart); drawCart(); drawShop(); drawPopular(); }
+  const closeAll = () => document.body.classList.remove("open-cart","open-item");
+
+  document.addEventListener("click", e => {
+    if (e.target.closest("[data-close]") || e.target.id === "shade") return closeAll();
+    const t = e.target.closest("[data-add],[data-ask],[data-c],[data-inc],[data-dec],[data-view]");
+    if (!t) return;
+    const d = t.dataset;
+    if (d.add){ cart[d.add] = (cart[d.add]||0) + 1; bump(d.add,"add"); track("add_to_cart", {item_name: byId(d.add).n, value: byId(d.add).p, currency:"KES"});
+      refresh(); toast("Added: " + byId(d.add).n); const b = $("cartbtn"); b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump"); }
+    else if (d.ask){ bump(d.ask,"ask"); track("whatsapp_enquiry", {item_name: byId(d.ask).n}); }
+    else if (d.c){ cat = d.c; drawShop(); track("view_item_list", {item_list_name: cat}); }
+    else if (d.inc){ cart[d.inc]++; refresh(); }
+    else if (d.dec){ if (--cart[d.dec] <= 0) delete cart[d.dec]; refresh(); }
+    else if (d.view){ openItem(d.view); }
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeAll(); });
+  ["q","sort"].forEach(id => $(id).addEventListener("input", drawShop));
+  $("cartbtn").onclick = $("floatCart").onclick = () => document.body.classList.add("open-cart");
+  $("send").onclick = e => {
+    if (!Object.keys(cart).length){ e.preventDefault(); return; }
+    e.currentTarget.href = wa(orderText());
+    orders.unshift({no: 1001 + orders.length, at: new Date().toISOString(), name: $("nm").value.trim() || "(no name)", how: $("how").value, area: $("area").value.trim(),
+      lines: Object.keys(cart).map(id => ({n: byId(id).n, q: cart[id], p: byId(id).p})), total: cartTotal(), status: "New"});
+    store.set("gd_orders", orders);
+    track("whatsapp_order", {value: cartTotal(), currency: "KES"});
+    cart = {}; setTimeout(refresh, 300);
+  };
+  const general = wa("Hi Gamerz Delight, I have a question.");
+  $("heroWa").href = $("floatWa").href = general;
+  $("tradeWa").href = wa("Hi Gamerz Delight, I'd like to trade in my console/phone. Model: ");
+
+  /* ---------- OWNER AREA ----------
+     DEMO ONLY: accounts, products and orders live in this phone's browser storage.
+     The paid build moves all of this to a server: hashed passwords, sessions that expire,
+     one account per staff member, and a record of who changed what. */
+  const ROLES = {owner:"Owner: everything", manager:"Manager: products and orders", staff:"Staff: orders only"};
+  let users = store.get("gd_users", [
+    {u:"benard", name:"Benard", role:"owner", code:"2026"},
+    {u:"shop2",  name:"Shop 2 attendant", role:"staff", code:"1111"}
+  ]);
+  let audit = store.get("gd_audit", []);
+  let me = (() => { try { return JSON.parse(sessionStorage.getItem("gd_me")); } catch(e){ return null; } })();
+  let tab = "dash";
+  const can = what => me && ({owner:["dash","products","orders","staff","log"], manager:["dash","products","orders","log"], staff:["orders"]}[me.role]||[]).includes(what);
+  const log = what => { audit.unshift({at:new Date().toISOString(), who: me ? me.name : "?", what}); audit = audit.slice(0,200); store.set("gd_audit", audit); };
+  const when = iso => new Date(iso).toLocaleString("en-KE", {day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
+  let tries = 0, lockUntil = 0;
+
+  function drawOwner(){
+    document.body.classList.toggle("admin-on", !!me);
+    const box = $("owner");
+    if (!me){
+      box.innerHTML = `<div class="login box"><h2 style="margin-top:0">Owner sign-in</h2>
+        <p>Benard and his staff sign in here to change prices and stock and to see orders.</p>
+        <div class="demo-note"><b>Sample sign-in.</b> Owner: <b>benard</b> / <b>2026</b>. Staff: <b>shop2</b> / <b>1111</b>. Everything you change stays on this phone only.</div>
+        <form id="loginForm" autocomplete="off"><label for="lu">Username</label><input id="lu" autocapitalize="none" maxlength="30">
+        <label for="lp">PIN</label><input id="lp" type="password" inputmode="numeric" maxlength="8">
+        <div class="err" id="lerr"></div><button class="btn p" style="width:100%;margin-top:6px">Sign in</button></form></div>`;
+      $("loginForm").onsubmit = e => {
+        e.preventDefault();
+        if (Date.now() < lockUntil) { $("lerr").textContent = "Too many tries. Wait 30 seconds."; return; }
+        const u = users.find(x => x.u === $("lu").value.trim().toLowerCase() && x.code === $("lp").value);
+        if (!u){ if (++tries >= 5){ lockUntil = Date.now() + 30000; tries = 0; } $("lerr").textContent = "Wrong username or PIN."; return; }
+        me = {u:u.u, name:u.name, role:u.role}; sessionStorage.setItem("gd_me", JSON.stringify(me));
+        tab = can("dash") ? "dash" : "orders"; log("Signed in"); drawOwner();
+      };
+      return;
+    }
+    const tabs = [["dash","Overview"],["products","Products"],["orders","Orders"],["staff","Staff"],["log","Activity"]].filter(([k]) => can(k));
+    box.innerHTML = `<div class="who" style="margin-top:22px"><div><h2 style="margin:0">Hello, ${esc(me.name)}</h2>
+      <span style="color:var(--muted);font-size:13px">${esc(ROLES[me.role])}</span></div>
+      <div style="display:flex;gap:8px"><a class="btn s" href="#/shop">View shop</a><button class="btn s" id="logout">Sign out</button></div></div>
+      <div class="demo-note">Sample owner area: changes are saved on this phone only. On the real site they are saved on the server and show for every buyer at once.</div>
+      <div class="tabs">${tabs.map(([k,l]) => `<button class="${k===tab?"on":""}" data-tab="${k}">${l}</button>`).join("")}</div>
+      <div id="tabBody"></div>`;
+    $("logout").onclick = () => { log("Signed out"); me = null; sessionStorage.removeItem("gd_me"); drawOwner(); };
+    box.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; drawOwner(); });
+    ({dash:tabDash, products:tabProducts, orders:tabOrders, staff:tabStaff, log:tabLog}[tab] || tabOrders)();
+  }
+
+  function tabDash(){
+    const sold = orders.reduce((s,o) => s + o.total, 0);
+    const out = items.filter(i => !inStock(i)).length, low = items.filter(i => inStock(i) && inStock(i) <= 2).length;
+    const rows = Object.entries(stats).map(([id,v]) => ({i:byId(id), a:v.add, k:v.ask, t:v.add+v.ask})).filter(r=>r.i).sort((a,b)=>b.t-a.t).slice(0,8);
+    const max = Math.max(1, ...rows.map(r=>r.t));
+    $("tabBody").innerHTML = `<div class="kpis">
+      <div class="kpi"><b>${orders.length}</b><span>WhatsApp orders</span></div>
+      <div class="kpi"><b>${kes(sold)}</b><span>Value of those orders</span></div>
+      <div class="kpi"><b>${items.length}</b><span>Products listed</span></div>
+      <div class="kpi"><b>${out} / ${low}</b><span>Sold out / running low</span></div></div>
+      <h3>What buyers ask about most</h3>
+      <p style="color:var(--muted);font-size:13px;margin-top:-4px">On the real site this comes from Google Analytics for every visitor. Here it counts the taps made on this phone.</p>
+      <div class="tw">${rows.length ? `<table><tr><th>Item</th><th>Added</th><th>Asked</th><th style="width:30%"></th></tr>${rows.map(r=>`<tr><td>${esc(r.i.n)}</td><td>${r.a}</td><td>${r.k}</td><td><div class="bar" style="width:${100*r.t/max}%"></div></td></tr>`).join("")}</table>`
+        : `<p style="padding:14px;margin:0;color:var(--muted)">No taps yet. Open the Shop, tap "Add" and "Ask" on a few items, then come back.</p>`}</div>`;
+  }
+
+  function tabProducts(editing){
+    const shopCols = SHOPS.map(s => `<th>${esc(s.name.split(",")[0])}</th>`).join("");
+    $("tabBody").innerHTML = `<div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap"><button class="btn p s" id="newP">+ Add a product</button>
+      ${me.role==="owner" ? `<button class="btn d s" id="resetP">Put the sample products back</button>` : ""}</div>
+      <div id="pform"></div>
+      <div class="tw"><table><tr><th></th><th>Product</th><th>Price</th>${shopCols}<th></th></tr>
+      ${items.map(i => `<tr><td>${visual(i,"thumb")}</div></td><td>${esc(i.n)}<br><span class="pill">${esc(i.c)}</span></td>
+        <td><input style="width:96px;padding:6px 8px" type="number" min="0" step="50" value="${i.p}" data-price="${esc(i.id)}" aria-label="Price"></td>
+        ${SHOPS.map(s => `<td><input style="width:60px;padding:6px 8px" type="number" min="0" value="${(i.stock||{})[s.id]||0}" data-stock="${esc(i.id)}" data-shop="${s.id}" aria-label="Stock"></td>`).join("")}
+        <td><button class="btn s" data-edit="${esc(i.id)}">Edit</button></td></tr>`).join("")}</table></div>`;
+    $("newP").onclick = () => productForm();
+    if ($("resetP")) $("resetP").onclick = () => { items = JSON.parse(JSON.stringify(DEFAULTS)); saveItems(); log("Restored the sample products"); refresh(); tabProducts(); toast("Sample products restored"); };
+    $("tabBody").querySelectorAll("[data-price]").forEach(el => el.onchange = () => {
+      const i = byId(el.dataset.price), v = Math.max(0, Math.round(Number(el.value)||0));
+      log(`Price of ${i.n}: ${kes(i.p)} → ${kes(v)}`); i.p = v; saveItems(); refresh(); toast("Price saved"); });
+    $("tabBody").querySelectorAll("[data-stock]").forEach(el => el.onchange = () => {
+      const i = byId(el.dataset.stock), v = Math.max(0, Math.round(Number(el.value)||0));
+      i.stock = i.stock || {}; log(`Stock of ${i.n} at ${SHOPS.find(s=>s.id===el.dataset.shop).name}: ${i.stock[el.dataset.shop]||0} → ${v}`);
+      i.stock[el.dataset.shop] = v; saveItems(); refresh(); toast(v ? "Stock saved" : "Marked sold out at this shop"); });
+    $("tabBody").querySelectorAll("[data-edit]").forEach(b => b.onclick = () => productForm(byId(b.dataset.edit)));
+    if (editing) productForm(editing);
+  }
+
+  function productForm(i){
+    const isNew = !i; i = i || {id:"", c:"Consoles", n:"", d:"", p:0, t:"New", pop:5, stock:{s1:1,s2:0}};
+    $("pform").innerHTML = `<div class="box" style="margin-bottom:12px"><h3>${isNew ? "New product" : "Edit " + esc(i.n)}</h3>
+      <form id="pf" class="formgrid">
+        <div class="full"><label for="fn">Name</label><input id="fn" required maxlength="60" value="${esc(i.n)}"></div>
+        <div class="full"><label for="fd">Short description</label><input id="fd" maxlength="90" value="${esc(i.d)}"></div>
+        <div><label for="fc">Category</label><select id="fc">${CATS.map(c => `<option ${c===i.c?"selected":""}>${c}</option>`).join("")}</select></div>
+        <div><label for="ft">Condition</label><select id="ft">${["New","Refurbished","Used"].map(c => `<option ${c===i.t?"selected":""}>${c}</option>`).join("")}</select></div>
+        <div><label for="fp">Price (KES)</label><input id="fp" type="number" min="0" step="50" value="${i.p}"></div>
+        <div><label for="fi">Photo from this phone</label><input id="fi" type="file" accept="image/*"></div>
+        <div class="full err" id="ferr"></div>
+        <div class="full" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn p">Save</button><button type="button" class="btn" id="fcancel">Cancel</button>
+          ${!isNew && me.role==="owner" ? `<button type="button" class="btn d" id="fdel">Delete</button>` : ""}</div>
+      </form></div>`;
+    $("pform").scrollIntoView({behavior:"smooth", block:"start"});
+    let img = i.img || "";
+    $("fi").onchange = () => {
+      const f = $("fi").files[0]; if (!f) return;
+      if (!/^image\/(jpeg|png|webp)$/.test(f.type)) { $("ferr").textContent = "Use a JPG, PNG or WebP photo."; return; }
+      // Shrink the photo on the phone before saving it.
+      const r = new FileReader(); r.onload = () => { const im = new Image(); im.onload = () => {
+        const W = 640, s = Math.min(1, W / im.width), c = document.createElement("canvas");
+        c.width = Math.round(im.width * s); c.height = Math.round(im.height * s);
+        c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); img = c.toDataURL("image/jpeg", .78); $("ferr").textContent = "Photo ready."; };
+        im.src = r.result; }; r.readAsDataURL(f);
+    };
+    $("fcancel").onclick = () => $("pform").innerHTML = "";
+    if ($("fdel")) $("fdel").onclick = () => { items = items.filter(x => x.id !== i.id); saveItems(); log("Deleted " + i.n); refresh(); tabProducts(); toast("Deleted"); };
+    $("pf").onsubmit = e => {
+      e.preventDefault();
+      const n = $("fn").value.trim(); if (!n) { $("ferr").textContent = "Give the product a name."; return; }
+      const rec = {...i, n, d: $("fd").value.trim(), c: $("fc").value, t: $("ft").value, p: Math.max(0, Math.round(Number($("fp").value)||0)), img};
+      if (isNew) { rec.id = "p" + Date.now().toString(36); items.unshift(rec); log("Added " + n); }
+      else { items = items.map(x => x.id === i.id ? rec : x); log("Edited " + n); }
+      saveItems(); refresh(); tabProducts(); toast("Saved. It shows in the shop now.");
+    };
+  }
+
+  function tabOrders(){
+    const ST = ["New","Confirmed","Paid","Delivered","Cancelled"], cls = {New:"y",Confirmed:"",Paid:"g",Delivered:"g",Cancelled:"r"};
+    $("tabBody").innerHTML = orders.length ? `<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+      ${orders.map((o,k) => `<div class="box">
+        <div class="who"><b>#${o.no} · ${kes(o.total)}</b><span class="pill ${cls[o.status]}">${esc(o.status)}</span></div>
+        <p style="margin:4px 0 8px">${when(o.at)} · ${esc(o.name)}<br>${esc(o.how)}${o.area ? ", " + esc(o.area) : ""}</p>
+        <div style="font-size:14px;margin-bottom:10px">${o.lines.map(l => `${l.q} × ${esc(l.n)}`).join("<br>")}</div>
+        <select data-ost="${k}" aria-label="Order status">${ST.map(s => `<option ${s===o.status?"selected":""}>${s}</option>`).join("")}</select></div>`).join("")}</div>`
+      : `<div class="box"><p>No orders yet. In the Shop, add a few items, open <b>Order</b> and press <b>Send order on WhatsApp</b>; the order appears here as well as in WhatsApp.</p></div>`;
+    $("tabBody").querySelectorAll("[data-ost]").forEach(s => s.onchange = () => {
+      const o = orders[s.dataset.ost]; log(`Order #${o.no}: ${o.status} → ${s.value}`); o.status = s.value; store.set("gd_orders", orders); tabOrders(); toast("Order updated"); });
+  }
+
+  function tabStaff(){
+    $("tabBody").innerHTML = `<div class="tw"><table><tr><th>Name</th><th>Username</th><th>Can do</th><th></th></tr>
+      ${users.map((u,k) => `<tr><td>${esc(u.name)}</td><td>${esc(u.u)}</td><td>${u.u===me.u ? esc(ROLES[u.role]) : `<select data-role="${k}" style="padding:6px 8px">${Object.entries(ROLES).map(([r,l]) => `<option value="${r}" ${r===u.role?"selected":""}>${l}</option>`).join("")}</select>`}</td>
+        <td>${u.u===me.u ? "<span class='pill'>you</span>" : `<button class="btn d s" data-rm="${k}">Remove</button>`}</td></tr>`).join("")}</table></div>
+      <div class="box" style="margin-top:12px"><h3>Add a staff member</h3><form id="sf" class="formgrid">
+        <div><label for="sn">Name</label><input id="sn" maxlength="40" required></div>
+        <div><label for="su">Username</label><input id="su" maxlength="20" autocapitalize="none" required></div>
+        <div><label for="sp">PIN (4–8 digits)</label><input id="sp" inputmode="numeric" maxlength="8" required></div>
+        <div><label for="sr">Can do</label><select id="sr">${Object.entries(ROLES).filter(([r]) => r!=="owner").map(([r,l]) => `<option value="${r}">${l}</option>`).join("")}</select></div>
+        <div class="full err" id="serr"></div><div class="full"><button class="btn p">Add</button></div></form></div>`;
+    $("tabBody").querySelectorAll("[data-role]").forEach(s => s.onchange = () => { const u = users[s.dataset.role]; log(`${u.name}: ${u.role} → ${s.value}`); u.role = s.value; store.set("gd_users", users); toast("Saved"); });
+    $("tabBody").querySelectorAll("[data-rm]").forEach(b => b.onclick = () => { const u = users[b.dataset.rm]; users.splice(b.dataset.rm,1); store.set("gd_users", users); log("Removed " + u.name); tabStaff(); toast("Removed"); });
+    $("sf").onsubmit = e => {
+      e.preventDefault();
+      const u = $("su").value.trim().toLowerCase(), code = $("sp").value.trim();
+      if (!/^[a-z0-9._-]{3,20}$/.test(u)) return $("serr").textContent = "Username: 3 to 20 letters or numbers.";
+      if (users.some(x => x.u === u)) return $("serr").textContent = "That username is taken.";
+      if (!/^\d{4,8}$/.test(code)) return $("serr").textContent = "PIN: 4 to 8 digits.";
+      users.push({u, name: $("sn").value.trim(), role: $("sr").value, code}); store.set("gd_users", users); log("Added staff " + $("sn").value.trim()); tabStaff(); toast("Staff member added");
+    };
+  }
+
+  function tabLog(){
+    $("tabBody").innerHTML = audit.length ? `<div class="tw"><table><tr><th>When</th><th>Who</th><th>What</th></tr>
+      ${audit.map(a => `<tr><td>${when(a.at)}</td><td>${esc(a.who)}</td><td>${esc(a.what)}</td></tr>`).join("")}</table></div>`
+      : `<div class="box"><p>Every change made by the owner or staff is listed here, with who made it and when.</p></div>`;
+  }
+
+  const pages = {"":"p-home", "shop":"p-shop", "trade-in":"p-trade", "visit":"p-visit", "owner":"p-owner"};
+  function route(){
+    const key = location.hash.replace(/^#\/?/, "");
+    const id = pages[key] || "p-home";
+    closeAll();
+    document.querySelectorAll(".page").forEach(p => p.classList.toggle("on", p.id === id));
+    document.querySelectorAll("#links a, #mnav a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#/" + key));
+    document.body.classList.toggle("admin-on", id === "p-owner" && !!me);
+    if (id === "p-owner") drawOwner();
+    track("page_view", {page_path: "/" + key});
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange", route);
+  drawVisit(); refresh(); route();
+</script>
+</body>
+</html>
